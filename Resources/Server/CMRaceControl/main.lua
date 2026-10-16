@@ -1,7 +1,7 @@
 -- Cainan's Motorsports Race Control | independent server-side prototype v0.1
 -- No copied third-party source. No automatic checkpoint scoring in this version.
 local TAG = '[CM Race Control] '
-local cfg = { adminNames = { 'CHANGE_TO_YOUR_EXACT_BEAMMP_NAME' }, maxDrivers = 25 }
+local cfg = { adminNames = { 'cainan' }, maxDrivers = 25 }
 local state = { flag='OFF', running=false, raceName='Crowleys Ridge Raceway', laps=20, registered={}, approved={}, order={} }
 local function say(id,msg) if MP and MP.SendChatMessage then MP.SendChatMessage(id,TAG..msg) end end
 local function admin(name)
